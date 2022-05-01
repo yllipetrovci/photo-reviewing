@@ -1,13 +1,11 @@
 import React from 'react';
 import { StyledThumbnailPhotoNotFound } from './styles/ThumbnailPhotoNotFound.styled';
-import AddIcon from '../assets/add.svg';
+import {assets} from '../assets';
 
 const ThumbnailPhotoNotFound = () => {
     return (
         <StyledThumbnailPhotoNotFound>
-            {/* <h1>ThumbnailPhoto</h1> */}
-            <img src={AddIcon} />
-
+            <img src={assets.AddIcon} />
         </StyledThumbnailPhotoNotFound>
     )
 }
