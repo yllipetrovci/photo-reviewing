@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledMainImage = styled.div`
-   border:1px solid black;    
+   background: rgb(64,83,220);
+   border-radius: 4px;
    height: 350px;
 `

@@ -9,5 +9,9 @@ export const StyledButton = styled.button`
     width: calc(50% - 10px);
     border:none;
 
+    img{
+        width: 20px;
+    }
+
     
 `
