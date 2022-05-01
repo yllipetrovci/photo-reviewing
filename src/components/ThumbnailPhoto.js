@@ -1,10 +1,11 @@
 import React from 'react';
+import { StyledThumbnailPhoto } from './styles/ThumbnailPhoto.styled';
 
-const ThumbnailPhoto = () =>{
-    return(
-        <div>
-            <h1>ThumbnailPhoto</h1>
-        </div>
+const ThumbnailPhoto = () => {
+    return (
+        <StyledThumbnailPhoto>
+            {/* <h1>ThumbnailPhoto</h1> */}
+        </StyledThumbnailPhoto>
     )
 }
 
