@@ -2,13 +2,13 @@ import React from 'react';
 import { StyledThumbnailPhoto } from './styles/ThumbnailPhoto.styled';
 import TickPhoto from '../assets/tick.svg';
 
-const ThumbnailPhoto = () => {
+const ThumbnailPhoto = ({ item }) => {
     return (
         <StyledThumbnailPhoto>
-            {/* <h1>ThumbnailPhoto</h1> */}
             <div className="icon">
                 <img src={TickPhoto} />
             </div>
+            <img  className="bg-image" src={item.urls.small} />
         </StyledThumbnailPhoto>
     )
 }

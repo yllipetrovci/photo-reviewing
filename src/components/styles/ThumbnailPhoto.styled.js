@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const StyledThumbnailPhoto = styled.div`
+    position: relative;
     min-width: 75px;
+    max-width: 75px;
     height: 40px;
     border-radius: 4px;
     margin-right:10px;
@@ -9,14 +11,15 @@ export const StyledThumbnailPhoto = styled.div`
     border: 1px solid rgb(64,83,220);
 
     .icon{
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 3px;
-        margin-right: 3px;
+        position: absolute;
+        right: 3px;
+        top:3px;
     }
 
-    .img{
-        width: 14px;
+    .bg-image{
+        width:100%;
+        height: 40px;
+        object-fit: cover;
     }
 
 `
