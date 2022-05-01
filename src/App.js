@@ -12,7 +12,7 @@ import TickIcon from './assets/tick.svg';
 
 function App() {
 
-  const [approvedPhotos, setApprovedPhotos] = useState([{}]);
+  const [approvedPhotos, setApprovedPhotos] = useState([]);
 
   const onClickApproved = () => {
     console.log('onClickApproved');
