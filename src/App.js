@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import { Container } from './components/styles/Container.styled';
 import { GlobalStyle } from './components/styles/Global';
 import { ThemeProvider } from 'styled-components';
-import {theme} from './components/styles/Theme';
+import { theme } from './components/styles/Theme';
 /**
  * Assets
  */
@@ -26,7 +26,6 @@ import Header from './components/Header';
  * Constants
  */
 import { BUTTON_LABELS } from './const/buttonLabels';
-
 
 function App() {
   const [approvedPhotos, setApprovedPhotos] = useState([]);

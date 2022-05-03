@@ -13,6 +13,5 @@ export const StyledThumbnailPhotoNotFound = styled.div`
 
     img{
         width: 20px;
-    }
-    
+    }   
 `

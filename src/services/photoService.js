@@ -12,4 +12,4 @@ class PhotoService {
     };
 }
 
-export default new  PhotoService();
+export default new PhotoService();
