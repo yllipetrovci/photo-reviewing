@@ -8,7 +8,7 @@ const ThumbnailPhoto = ({ item }) => {
             <div className="icon">
                 <img src={TickPhoto} />
             </div>
-            <img className="bg-image" src={item.urls.small} />
+            <img className="bg-image" src={item.urls.small} alt="thumbnail"/>
         </StyledThumbnailPhoto>
     )
 }

@@ -19,7 +19,7 @@ import photoService from './services/photoService';
  */
 import ApprovedImagesScroller from './components/ApprovedImagesScroller';
 import Button from './components/Button';
-import MainImage from './components/MainImage';
+import MainImage from './components/MainPhoto';
 import Panel from './components/Panel';
 import Header from './components/Header';
 /**
@@ -44,7 +44,7 @@ function App() {
     try {
       setLoadingMainImage(true);
       const response = await photoService.getRandomPhoto();
-
+      console.log(response);
       if (hasItemRejectedOrApproved(response.data.id)) {
         getRandomPhoto();
       } else {

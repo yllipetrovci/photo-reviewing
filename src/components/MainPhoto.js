@@ -1,20 +1,20 @@
 import React, { memo } from 'react';
-import { StyledMainImage } from './styles/MainImage.styled';
+import { StyledMainPhoto } from './styles/MainPhoto.styled';
 import AnimatedSearchIcon from '../assets/loading.svg';
 
-const MainImage = ({ imageURL, isLoading }) => {
+const MainPhoto = ({ imageURL, isLoading }) => {
     return (
-        <StyledMainImage>
+        <StyledMainPhoto>
             {!isLoading ?
-                <img src={imageURL} alt="main image" />
+                <img src={imageURL} alt="main image" className="main-photo" />
                 :
                 <div className="isLoading">
                     <img src={AnimatedSearchIcon} alt="loading" />
                     <p>Loading...</p>
                 </div>
             }
-        </StyledMainImage>
+        </StyledMainPhoto>
     )
 }
 
-export default memo(MainImage);
+export default memo(MainPhoto);

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledMainImage = styled.div`
+export const StyledMainPhoto = styled.div`
    background: ${({ theme }) => theme.blueBgColor};
    border-radius: 4px;
    height: 350px;
