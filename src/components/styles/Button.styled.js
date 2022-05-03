@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {BUTTON_LABELS} from '../../const/buttonLabels';
 
 export const StyledButton = styled.button`
     transition: 600ms;
@@ -6,7 +7,7 @@ export const StyledButton = styled.button`
     border-radius:40px;
     height: 55px;
     background: none;
-    background-color: ${({ bgColor }) => bgColor ? bgColor : "#fff"};
+    background-color: ${({ label, theme  }) => label === BUTTON_LABELS.APPROVED ? theme.buttons.approved.bgColor : theme.buttons.rejected.bgColor};
     width: calc(50% - 10px);
     border:none;
     cursor: pointer;

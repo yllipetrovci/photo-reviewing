@@ -1,14 +1,32 @@
 import React, { useEffect, useState } from 'react';
+/**
+ * Styles
+ */
+import { Container } from './components/styles/Container.styled';
+import { GlobalStyle } from './components/styles/Global';
+import { ThemeProvider } from 'styled-components';
+import {theme} from './components/styles/Theme';
+/**
+ * Assets
+ */
+import { assets } from './assets';
+/**
+ * Service
+ */
+import photoService from './services/photoService';
+/**
+ * Components
+ */
 import ApprovedImagesScroller from './components/ApprovedImagesScroller';
 import Button from './components/Button';
 import MainImage from './components/MainImage';
 import Panel from './components/Panel';
 import Header from './components/Header';
-import { Container } from './components/styles/Container.styled';
-import { GlobalStyle } from './components/styles/Global';
+/**
+ * Constants
+ */
+import { BUTTON_LABELS } from './const/buttonLabels';
 
-import { assets } from './assets';
-import photoService from './services/photoService';
 
 function App() {
   const [approvedPhotos, setApprovedPhotos] = useState([]);
@@ -27,6 +45,7 @@ function App() {
     try {
       setLoadingMainImage(true);
       const response = await photoService.getRandomPhoto();
+
       if (hasItemRejectedOrApproved(response.data.id)) {
         getRandomPhoto();
       } else {
@@ -42,7 +61,7 @@ function App() {
   }
 
   useEffect(() => {
-    getRandomPhoto();
+    // getRandomPhoto();
   }, []);
 
   const onClickApproved = () => {
@@ -57,7 +76,7 @@ function App() {
   }
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Container>
         <Panel>
@@ -66,13 +85,13 @@ function App() {
             <ApprovedImagesScroller items={approvedPhotos} />
             {currentRandomPhoto.urls && <MainImage isLoading={loadingMainImage} imageURL={currentRandomPhoto.urls.small} />}
             <div className='buttons'>
-              <Button onClickEvent={onClickRejected} icon={assets.RejectedIcon} bgColor="rgb(69,69,69)" />
-              <Button onClickEvent={onClickApproved} icon={assets.ApprovedIcon} bgColor="rgb(64,83,220)" />
+              <Button label={BUTTON_LABELS.REJECTED} onClickEvent={onClickRejected} icon={assets.RejectedIcon} />
+              <Button label={BUTTON_LABELS.APPROVED} onClickEvent={onClickApproved} icon={assets.ApprovedIcon} />
             </div>
           </div>
         </Panel>
       </Container>
-    </>
+    </ThemeProvider>
 
   );
 }

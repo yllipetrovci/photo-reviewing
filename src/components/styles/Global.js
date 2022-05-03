@@ -14,7 +14,4 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
-  
-    background: rgb(64,83,220);
-    padding:0;
 `

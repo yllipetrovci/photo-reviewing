@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyledButton } from './styles/Button.styled';
 
-const Button = ({ icon, bgColor, onClickEvent }) => {
+const Button = ({ icon, label, onClickEvent }) => {
     return (
-        <StyledButton bgColor={bgColor} onClick={onClickEvent}>
-            <img src={icon} />
+        <StyledButton label={label} onClick={onClickEvent}>
+            <img src={icon} alt={label} />
         </StyledButton>
     )
 }

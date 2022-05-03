@@ -7,7 +7,7 @@ export const StyledThumbnailPhoto = styled.div`
     height: 40px;
     border-radius: 4px;
     margin-right:10px;
-    background: rgb(64,83,220);
+    background: ${({ theme }) => theme.blueBgColor};
     border: 1px solid rgb(64,83,220);
 
     .icon{
