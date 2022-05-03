@@ -8,7 +8,7 @@ export const theme = {
         }
     },
     titleColor: "rgb(64,83,220)",
-    bottomBorder: "1px solid rgba(0,0,0,0.2)",
+    bottomBorder: "1px solid rgba(0,0,0,0.3)",
     loadingTextColor: '#fff',
     blueBgColor: "rgb(64,83,220)"
 }

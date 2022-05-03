@@ -15,6 +15,5 @@ export const StyledPanel = styled.div`
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border-top:${({ theme }) => theme.borderBottom}
-    }
-    `
+        border-top:${({ theme }) => theme.bottomBorder}
+    }`

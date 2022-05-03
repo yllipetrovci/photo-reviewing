@@ -6,8 +6,7 @@ class PhotoService {
         return axios.get(
             config.baseURL
             , {
-                params:
-                    { client_id: config.clientID }
+                params: { client_id: config.clientID }
             });
     };
 }
