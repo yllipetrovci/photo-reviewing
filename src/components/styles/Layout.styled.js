@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Layout = styled.div`
     margin:0;
     background: ${({ theme }) => theme.blueBgColor};
     height: 100vh;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 /**
  * Styles
  */
-import { Container } from './components/styles/Container.styled';
+import { Layout } from './components/styles/Layout.styled';
 import { GlobalStyle } from './components/styles/Global';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './components/styles/Theme';
@@ -60,7 +60,7 @@ function App() {
   }
 
   useEffect(() => {
-    // getRandomPhoto();
+    getRandomPhoto();
   }, []);
 
   const onClickApproved = () => {
@@ -77,7 +77,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Container>
+      <Layout>
         <Panel>
           <Header />
           <div className="content">
@@ -89,7 +89,7 @@ function App() {
             </div>
           </div>
         </Panel>
-      </Container>
+      </Layout>
     </ThemeProvider>
 
   );

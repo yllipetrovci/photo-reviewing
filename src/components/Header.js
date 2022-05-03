@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo }  from 'react';
 import { StyledHeader } from './styles/Header.styled';
 
 const Header = () => {
@@ -9,4 +9,4 @@ const Header = () => {
     )
 };
 
-export default Header;
+export default memo(Header);

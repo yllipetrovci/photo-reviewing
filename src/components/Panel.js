@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo }  from 'react';
 import { StyledPanel } from './styles/Panel.styled';
 
 const Panel = ({ children }) => {
@@ -9,4 +9,4 @@ const Panel = ({ children }) => {
     )
 };
 
-export default Panel;
+export default memo(Panel);

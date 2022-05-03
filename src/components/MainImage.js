@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { StyledMainImage } from './styles/MainImage.styled';
 import AnimatedSearchIcon from '../assets/loading.svg';
 
@@ -17,4 +17,4 @@ const MainImage = ({ imageURL, isLoading }) => {
     )
 }
 
-export default MainImage;
+export default memo(MainImage);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { StyledThumbnailPhoto } from './styles/ThumbnailPhoto.styled';
 import TickPhoto from '../assets/tick.svg';
 
@@ -13,4 +13,4 @@ const ThumbnailPhoto = ({ item }) => {
     )
 }
 
-export default ThumbnailPhoto;
+export default memo(ThumbnailPhoto);

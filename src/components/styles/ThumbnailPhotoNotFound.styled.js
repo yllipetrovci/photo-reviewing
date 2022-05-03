@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledThumbnailPhotoNotFound = styled.div`
+export const StyledThumbnailPhotoEmpty = styled.div`
    min-width: 75px;
     height: 40px;
     border-radius: 4px;

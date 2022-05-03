@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { memo } from 'react';
+
 import { StyledButton } from './styles/Button.styled';
 
 const Button = ({ icon, label, onClickEvent }) => {
@@ -9,4 +10,4 @@ const Button = ({ icon, label, onClickEvent }) => {
     )
 }
 
-export default Button;
+export default memo(Button);
