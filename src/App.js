@@ -44,7 +44,7 @@ function App() {
     try {
       setLoadingMainImage(true);
       const response = await photoService.getRandomPhoto();
-      console.log(response);
+      
       if (hasItemRejectedOrApproved(response.data.id)) {
         getRandomPhoto();
       } else {
