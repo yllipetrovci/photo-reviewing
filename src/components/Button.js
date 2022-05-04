@@ -7,7 +7,7 @@ const Button = ({ icon, label, onClickEvent }) => {
         <StyledButton label={label} onClick={onClickEvent}>
             <img src={icon} alt={label} />
         </StyledButton>
-    )
-}
+    );
+};
 
 export default memo(Button);

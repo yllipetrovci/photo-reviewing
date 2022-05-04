@@ -14,5 +14,5 @@ describe('MainPhoto', () => {
         render(<MainPhoto imageURL={imageSrc} isLoading={true} />);
         const text = screen.getByText('Loading...');
         expect(text).toBeInTheDocument();
-    })
-})
+    });
+});

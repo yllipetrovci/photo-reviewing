@@ -18,7 +18,7 @@ describe('photoService ', () => {
             expect(response).toBe(payload);
 
         } catch (e) {
-
+            console.error(e);
         }
-    })
-})
+    });
+});

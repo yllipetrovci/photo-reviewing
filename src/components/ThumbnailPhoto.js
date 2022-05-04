@@ -10,7 +10,7 @@ const ThumbnailPhoto = ({ item }) => {
             </div>
             <img className="bg-image" src={item.urls.small} alt="thumbnail"/>
         </StyledThumbnailPhoto>
-    )
-}
+    );
+};
 
 export default memo(ThumbnailPhoto);

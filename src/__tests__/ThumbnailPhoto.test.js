@@ -12,5 +12,5 @@ describe('thumbnail photo ', () => {
 
         const img = container.querySelector(".bg-image");
         expect(img.src).toBe(item.urls.small);
-    })
+    });
 })

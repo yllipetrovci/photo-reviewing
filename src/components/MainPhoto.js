@@ -14,7 +14,7 @@ const MainPhoto = ({ imageURL, isLoading }) => {
                 </div>
             }
         </StyledMainPhoto>
-    )
-}
+    );
+};
 
 export default memo(MainPhoto);

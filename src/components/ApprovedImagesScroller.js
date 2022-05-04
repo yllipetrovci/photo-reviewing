@@ -12,7 +12,7 @@ const ApprovedImagesScroller = ({ items }) => {
                 {items.map((item, index) => <ThumbnailPhoto item={item} key={index} />)}
             </div>
         </StyledApprovedImagesScroller>
-    )
-}
+    );
+};
 
 export default memo(ApprovedImagesScroller);

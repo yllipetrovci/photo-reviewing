@@ -56,7 +56,6 @@ function App() {
     } finally {
       setLoadingMainImage(false);
     }
-
   }
 
   useEffect(() => {
@@ -66,7 +65,6 @@ function App() {
   const onClickApproved = () => {
     setApprovedPhotos([...approvedPhotos, { id: currentRandomPhoto.id, urls: currentRandomPhoto.urls }]);
     getRandomPhoto();
-
   }
 
   const onClickRejected = () => {
@@ -91,8 +89,7 @@ function App() {
         </Panel>
       </Layout>
     </ThemeProvider>
-
   );
-}
+};
 
 export default App;

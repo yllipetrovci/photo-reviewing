@@ -7,7 +7,7 @@ const ThumbnailPhotoEmpty = () => {
         <StyledThumbnailPhotoEmpty>
             <img src={assets.AddIcon} alt="not found"/>
         </StyledThumbnailPhotoEmpty>
-    )
-}
+    );
+};
 
 export default memo(ThumbnailPhotoEmpty);

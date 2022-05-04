@@ -6,7 +6,7 @@ const Panel = ({ children }) => {
         <StyledPanel>
             {children}
         </StyledPanel>
-    )
+    );
 };
 
 export default memo(Panel);

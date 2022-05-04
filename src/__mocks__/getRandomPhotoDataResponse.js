@@ -88,4 +88,4 @@ export const mockResponse = {
     },
     "views": 181944,
     "downloads": 1107
-}
+};

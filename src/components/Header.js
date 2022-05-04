@@ -6,7 +6,7 @@ const Header = () => {
         <StyledHeader>
             <h1>IMAGE APPROVAL APPLICATION</h1>
         </StyledHeader>
-    )
+    );
 };
 
 export default memo(Header);
